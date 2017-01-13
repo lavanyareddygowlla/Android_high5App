@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gimme 5 Award \n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF3B85DF"
+            android:textStyle="bold"
+            android:textSize="75px"
+            android:textAlignment="center"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textNTID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the employee by entering their first or last name or NTID:\n"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF3B85DF"
+            android:textStyle="bold"
+            android:textSize="35px"
+            />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:id="@+id/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30px" />
+    </TableRow>
+
+    <TableRow>
+<RadioGroup>
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButton1"
+        android:layout_below="@+id/radioButton1"
+        android:text="Single Employee" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButton1"
+        android:layout_below="@+id/radioButton1"
+        android:text="Multiple Employee" />
+</RadioGroup>
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/perimeterEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_normal_margin"
+            android:layout_marginRight="@dimen/app_normal_margin"
+            android:background="@drawable/action_bar_background"
+            android:inputType="textShortMessage" />
+    </TableRow>
+
+
+</TableLayout>
